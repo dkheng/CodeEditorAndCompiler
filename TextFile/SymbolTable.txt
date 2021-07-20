@@ -1,0 +1,32 @@
+符号表总表
+序号	标识符名	类型	种类	地址指针
+0	func	空	f	PFINFL[0]
+1	i	TAPEL[0]	vf	VALL[4]
+2	x	TAPEL[0]	v	VALL[6]
+3	y	TAPEL[0]	v	VALL[7]
+4	a	TAPEL[0]	v	VALL[8]
+5	b	TAPEL[0]	v	VALL[9]
+
+
+类型表
+序号	类型	类型信息指针
+0	int	空
+
+
+函数表
+序号	层次号	区距	参数个数	参数表指针
+0	0	3	1	SYNBL[1]
+
+
+活动记录表VALL
+
+9   b
+8   a
+7   y
+6   x
+5   Display表
+4   i
+3   1
+2   全局display地址
+1   返回地址
+0   OLD SP

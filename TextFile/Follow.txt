@@ -1,0 +1,27 @@
+Follow集：
+<函数>: # 
+<整数>: ; 
+<返回类型>: <标识符> 
+<参数列表>: { 
+<参数串>: ) 
+<参数>: ) , 
+<参数串循环>: ) 
+<复合语句>: # } <标识符> if while return else 
+<变量声明表>: } <标识符> if while return 
+<int变量声明>: } <标识符> if while return int 
+<int变量初始值>: } <标识符> if while return int 
+<语句序列>: } 
+<赋值语句>: } <标识符> if while return 
+<表达式>: ; ) < > == != 
+<加减表达式>: ; ) < > == != 
+<乘除表达式>: ; + - ) < > == != 
+<乘除表达式扩展>: ; + - ) < > == != 
+<因子>: ; + - * / ) < > == != 
+<条件语句>: } <标识符> if while return 
+<else语句>: } <标识符> if while return 
+<条件>: ) 
+<比较语句>: ) 
+<关系运算符>: <标识符> <无符号整数> ( 
+<循环语句>: } <标识符> if while return 
+<返回语句>: } <标识符> if while return 
+<返回内容>: } <标识符> if while return 

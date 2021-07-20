@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1600</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>HJ Editor</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="CodeEditor" name="editor">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>521</width>
+      <height>331</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="Console" name="outputText">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>340</y>
+      <width>521</width>
+      <height>81</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="Console" name="QuadrupleText">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>0</y>
+      <width>131</width>
+      <height>331</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="Console" name="ObjectCodeText">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>0</y>
+      <width>111</width>
+      <height>331</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1600</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionNewFile"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave_File"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit_O">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="actionSelectAll"/>
+    <addaction name="actionUndo"/>
+    <addaction name="actionRedo"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp_H">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menuEdit_O"/>
+   <addaction name="menuHelp_H"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonIconOnly</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNewFile"/>
+   <addaction name="actionOpen"/>
+   <addaction name="actionSave_File"/>
+   <addaction name="actionUndo"/>
+   <addaction name="actionRedo"/>
+   <addaction name="actionRun"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionNewFile">
+   <property name="icon">
+    <iconset resource="Images/Images.qrc">
+     <normaloff>:/New.png</normaloff>:/New.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建</string>
+   </property>
+   <property name="toolTip">
+    <string>新建一个C++代码文件</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="Images/Images.qrc">
+     <normaloff>:/Open.png</normaloff>:/Open.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开...</string>
+   </property>
+   <property name="toolTip">
+    <string>打开文件...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSelectAll">
+   <property name="icon">
+    <iconset resource="Images/Images.qrc">
+     <normaloff>:/All.png</normaloff>:/All.png</iconset>
+   </property>
+   <property name="text">
+    <string>全选</string>
+   </property>
+   <property name="toolTip">
+    <string>选择全部文本</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="icon">
+    <iconset resource="Images/Images.qrc">
+     <normaloff>:/Undo.png</normaloff>:/Undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>撤销</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="icon">
+    <iconset resource="Images/Images.qrc">
+     <normaloff>:/Redo.png</normaloff>:/Redo.png</iconset>
+   </property>
+   <property name="text">
+    <string>重做</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+Z</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="Images/Images.qrc">
+     <normaloff>:/About.png</normaloff>:/About.png</iconset>
+   </property>
+   <property name="text">
+    <string>关于 HJ Editor</string>
+   </property>
+   <property name="toolTip">
+    <string>关于 HJ Editor</string>
+   </property>
+  </action>
+  <action name="actionSave_File">
+   <property name="icon">
+    <iconset resource="Images/Images.qrc">
+     <normaloff>:/Save.png</normaloff>:/Save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存文件</string>
+   </property>
+   <property name="toolTip">
+    <string>保存文件</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionRun">
+   <property name="icon">
+    <iconset resource="Images/Images.qrc">
+     <normaloff>:/Run.png</normaloff>:/Run.png</iconset>
+   </property>
+   <property name="text">
+    <string>运行</string>
+   </property>
+   <property name="toolTip">
+    <string>编译并运行代码</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>CodeEditor</class>
+   <extends>QPlainTextEdit</extends>
+   <header location="global">codeeditor.h</header>
+  </customwidget>
+  <customwidget>
+   <class>Console</class>
+   <extends>QPlainTextEdit</extends>
+   <header location="global">console.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="Images/Images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

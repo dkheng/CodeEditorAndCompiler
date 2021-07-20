@@ -1,0 +1,33 @@
+func SEGMENT
+lab1 LD R,5
+lab2 ST R,x
+lab3 LD R,1
+lab4 ST R,y
+lab5 LD R,6
+lab6 LD R,5
+lab7 ADD R,1
+lab8 MUL R,6
+lab9 ST R,b
+lab10 LD R,5
+lab11 SUB R,1
+lab12 LD R,b
+lab13 DIV R,t7
+lab14 LT R,7
+lab15 FJ R,lab21
+lab16 LD R,a
+lab17 SUB R,b
+lab18 ST R,a
+lab19 JMP lab22
+lab20 ADD R,b
+lab21 ST R,a
+lab22 ST R,a
+lab23 LT R,b
+lab24 FJ R,lab29
+lab25 LD R,a
+lab26 ADD R,1
+lab27 ST R,a
+lab28 JMP lab23
+lab29 LD R,2
+lab30 MUL R,b
+lab31 LD R,t14
+SEGMENT END
